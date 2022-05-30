@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5433247793712875728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5433247793712875729}
+  - component: {fileID: 5433247793712875730}
+  m_Layer: 0
+  m_Name: PoolManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5433247793712875729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433247793712875728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5433247793712875730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433247793712875728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76341f8ffb1d85148a1efe448dd2d774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - tagName: Diamond
+    prefab: {fileID: 9006035374651844903, guid: c5df5ce93b906d1429abbe4b5706987b, type: 3}
+    firstSize: 40
+    currentSize: 0
+    usedContainer: {fileID: 0}
+    readyToUseContainer: {fileID: 0}
+  - tagName: Obstacle
+    prefab: {fileID: 6736911246240430679, guid: 92b724c3884ff2b4cbf6deae85669b13, type: 3}
+    firstSize: 40
+    currentSize: 0
+    usedContainer: {fileID: 0}
+    readyToUseContainer: {fileID: 0}
+  - tagName: Particle
+    prefab: {fileID: 1780609008699409548, guid: f0753fb466559f14ab1315657cc5af1c, type: 3}
+    firstSize: 40
+    currentSize: 0
+    usedContainer: {fileID: 0}
+    readyToUseContainer: {fileID: 0}
